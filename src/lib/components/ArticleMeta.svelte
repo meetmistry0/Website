@@ -15,6 +15,6 @@
 	}
 
 	.date {
-		color: var(--color-text-secondary);
+		color: var(--color-secondary);
 	}
 </style>

@@ -47,8 +47,9 @@
 
 <style>
     :global(pre) {
-        border-radius: 8px;
-        padding: 15px;
+        overflow: auto;
+        border-radius: 0.45em;
+        padding: 0.84em;
     }
 
     :global(code) {

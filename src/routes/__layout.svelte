@@ -1,6 +1,6 @@
 <script>
-    import { afterUpdate } from "svelte";
     import DarkMode from "svelte-dark-mode";
+    import { afterUpdate } from "svelte";
 
     let theme;
     $: switchTheme = theme === "dark" ? "light" : "dark";
@@ -24,39 +24,35 @@
 </main>
 
 <style>
-    @import url("https://fonts.googleapis.com/css2?family=Fira+Mono&family=Merriweather&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Fira+Mono&family=Poppins&display=swap");
 
     :root {
         --spacing-1: 0.25rem;
         --spacing-4: 1rem;
         --spacing-6: 1.5rem;
         --spacing-8: 2rem;
-        --color-primary: #ff183a;
-        --color-heading: #1a202c;
-        --color-accent: #d1dce5;
-    }
-
-    :global(:root) {
         --spacing-unit: 4px;
-        --color-background: #fffbf4;
-        --color-text-primary: #000000;
-        --color-text-secondary: #838383;
+        --color-accent: #ff183a;
+        --color-secondary: #838383; /* Dim color text */
+        --color-tertiary: #d1dce5; /* For hr and table dividers */
         --font-heading: "Fira Mono", monospace;
-        --font-body: "Merriweather", serif;
+        --font-body: "Poppins", sans-serif;
     }
 
     :global(.dark) {
-        background: #121212;
-        color: #ffffff;
-        transition: background-color 0.4s;
+        --bg: #121212;
+        --text-color: #ffffff;
         --inlineCode-bg: rgba(115, 124, 153, 0.2);
         --inlineCode-text: #e6e6e6;
+        transition: background-color 0.4s;
     }
 
     :global(.light) {
-        transition: background-color 0.4s;
+        --bg: #fffbf4;
+        --text-color: #000000;
         --inlineCode-bg: rgba(255, 229, 100, 0.2);
         --inlineCode-text: #1a1a1a;
+        transition: background-color 0.4s;
     }
 
     :global(body) {
@@ -64,14 +60,13 @@
         padding: 0 28px 0 28px;
         max-width: 64ch;
         font-family: var(--font-body);
-        background-color: var(--color-background);
-        color: var(--color-text-primary);
-        line-height: 1.5;
+        background-color: var(--bg);
+        color: var(--text-color);
         font-size: 18px;
     }
 
     :global(hr) {
-        background: var(--color-accent);
+        background: var(--color-tertiary);
         height: 1.5px;
         border: 0;
     }
@@ -80,12 +75,10 @@
     :global(h1, h2, h3, h4, h5, h6) {
         font-family: var(--font-heading);
         letter-spacing: -0.025em;
-        /* color: var(--color-heading-black); */
     }
 
     :global(h2, h3, h4, h5, h6) {
         font-weight: 700;
-        /* color: var(--color-heading); */
     }
 
     :global(h1 > a) {
@@ -101,7 +94,7 @@
         margin-left: calc(-1 * var(--spacing-6));
         margin-right: var(--spacing-8);
         padding: 0 0 0 var(--spacing-6);
-        border-left: var(--spacing-1) solid var(--color-primary);
+        border-left: var(--spacing-1) solid var(--color-accent);
         font-style: italic;
     }
 
@@ -120,7 +113,7 @@
     }
 
     :global(table thead tr th) {
-        border-bottom: 1.5px solid var(--color-accent);
+        border-bottom: 1.5px solid var(--color-tertiary);
     }
 
     /* Media queries */
@@ -136,9 +129,9 @@
     }
 
     :global(a, a:visited, a:active) {
+        color: var(--text-color);
         text-decoration: none;
-        color: var(--primary);
-        box-shadow: 0 2px 0 0 #ff183a;
+        box-shadow: 0 2px 0 0 var(--color-accent);
     }
 
     :global(a:hover) {
@@ -157,7 +150,7 @@
         font-weight: bold;
         color: #fff;
         background-color: #fa243c;
-        padding: 4px 10px;
+        padding: 3px 9px;
         border-radius: 5px;
         box-shadow: 0 5px 0 0 #dc001a;
         border: none;
@@ -178,6 +171,6 @@
     }
 
     nav a {
-        margin-right: 0.875em;
+        margin-right: 0.8em;
     }
 </style>
