@@ -58,7 +58,7 @@
     :global(body) {
         margin: 55px auto;
         padding: 0 28px 0 28px;
-        max-width: 64ch;
+        max-width: 40em; /* approximate of 64ch */
         font-family: var(--font-body);
         background-color: var(--bg);
         color: var(--text-color);
@@ -74,25 +74,29 @@
     /* Heading */
     :global(h1, h2, h3, h4, h5, h6) {
         font-family: var(--font-heading);
-        letter-spacing: -0.025em;
+        letter-spacing: -0.03em;
     }
 
-    :global(h2, h3, h4, h5, h6) {
-        font-weight: 700;
-    }
-
-    :global(h1 > a) {
+    :global(h1, h2, h3, h4, h5, h6) {
         text-decoration: none;
+        box-shadow: none;
     }
 
-    :global(h2 > a, h3 > a, h4 > a, h5 > a, h6 > a) {
+    :global(h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a) {
+        text-decoration: none;
+        box-shadow: none;
+        color: var(--color-accent);
+    }
+
+    :global(h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5
+            > a:hover, h6 > a:hover) {
         text-decoration: none;
     }
 
     /* Prose */
     :global(blockquote) {
         margin-left: calc(-1 * var(--spacing-6));
-        margin-right: var(--spacing-8);
+        margin-right: 2rem;
         padding: 0 0 0 var(--spacing-6);
         border-left: var(--spacing-1) solid var(--color-accent);
         font-style: italic;
@@ -107,7 +111,7 @@
     }
 
     :global(table) {
-        margin-bottom: var(--spacing-8);
+        margin-bottom: 2rem;
         border-collapse: collapse;
         border-spacing: 0.25rem;
     }
