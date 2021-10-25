@@ -56,8 +56,8 @@
     }
 
     :global(body) {
-        margin: 55px auto;
-        padding: 0 28px 0 28px;
+        margin: 0 auto;
+        padding: 55px 28px 55px 28px;
         max-width: 40em; /* approximate of 64ch */
         font-family: var(--font-body);
         background-color: var(--bg);
