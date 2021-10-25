@@ -1,5 +1,5 @@
 <script>
-    export let showOnPx = 275;
+    export let showOnPx = 250;
     let hidden = true;
 
     function goTop() {
@@ -25,13 +25,15 @@
 
 <svelte:window on:scroll={handleOnScroll} />
 
-<div class="back-to-top" on:click={goTop} class:hidden>Back to top</div>
+<button class="back-to-top" on:click={goTop} class:hidden>Back to top</button>
 
 <style>
     .back-to-top {
         text-align: center;
         color: var(--text-color);
-        background: transparent;
+        font-size: 0.9em;
+        font-family: "Poppins", sans-serif;
+        background-color: var(--bg);
         cursor: pointer;
         position: fixed;
         bottom: 30px;
