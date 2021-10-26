@@ -24,6 +24,7 @@
     import PageHead from "$lib/components/PageHead.svelte";
     import ArticleTitle from "$lib/components/ArticleTitle.svelte";
     import ArticleMeta from "$lib/components/ArticleMeta.svelte";
+    import BackToTop from "$lib/components/BackToTop.svelte";
 
     export let post;
 </script>
@@ -44,6 +45,8 @@
 <ArticleMeta date={post.date} />
 
 <slot />
+
+<BackToTop />
 
 <style>
     :global(pre) {

@@ -5,7 +5,7 @@
 
 <svelte:head>
     <title>Home | Meet Mistry</title>
-    <meta name="description" content="meet's personal website" />
+    <meta name="description" content="My personal website" />
 </svelte:head>
 
 <DarkMode bind:theme />

@@ -29,7 +29,7 @@
 
 <svelte:head>
     <title>Blog | Meet Mistry</title>
-    <meta name="description" content="meet's personal blog" />
+    <meta name="description" content="Personal blog" />
 </svelte:head>
 
 <DarkMode bind:theme />
