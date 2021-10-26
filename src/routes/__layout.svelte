@@ -12,8 +12,9 @@
 <DarkMode bind:theme />
 
 <nav>
-    <a sveltekit:prefetch class="links" href="/">/home</a>
+    <a class="links" href="/">/home</a>
     <a sveltekit:prefetch class="links" href="/blog">/blog</a>
+    <a class="links" href="/about">/about</a>
     <button class="btn-toggle" on:click={() => (theme = switchTheme)}
         >☀️/🌑</button
     >
@@ -121,7 +122,7 @@
     }
 
     /* Media queries */
-    @media (max-width: 42rem) {
+    @media (max-width: 40rem) {
         :global(blockquote) {
             padding: 0 0 0 var(--spacing-4);
             margin-left: 0;
@@ -138,7 +139,7 @@
         box-shadow: 0 2px 0 0 var(--color-accent);
     }
 
-    :global(a:hover) {
+    :global(a:hover, a:focus) {
         box-shadow: none;
     }
 
