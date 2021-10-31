@@ -34,8 +34,8 @@
         --spacing-8: 2rem;
         --spacing-unit: 4px;
         --color-accent: #ff183a;
-        --color-secondary: #838383; /* Dim color text */
-        --color-tertiary: #d1dce5; /* For hr and table dividers */
+        --color-secondary: #838383;
+        --color-tertiary: #d1dce5;
         --font-heading: "Fira Mono", monospace;
         --font-body: "Poppins", sans-serif;
     }
@@ -59,7 +59,7 @@
     :global(body) {
         margin: 0 auto;
         padding: 55px 28px 55px 28px;
-        max-width: 40em; /* approximate of 64ch */
+        max-width: 40em; /* approx 64ch */
         font-family: var(--font-body);
         background-color: var(--bg);
         color: var(--text-color);
@@ -72,7 +72,6 @@
         border: 0;
     }
 
-    /* Heading */
     :global(h1, h2, h3, h4, h5, h6) {
         font-family: var(--font-heading);
         letter-spacing: -0.03em;
@@ -85,16 +84,14 @@
 
     :global(h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a) {
         text-decoration: none;
-        box-shadow: none;
-        color: var(--color-accent);
+        color: var(--text-color);
     }
 
-    :global(h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5
+    /* :global(h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5
             > a:hover, h6 > a:hover) {
         text-decoration: none;
-    }
+    } */
 
-    /* Prose */
     :global(blockquote) {
         margin-left: calc(-1 * var(--spacing-6));
         margin-right: 2rem;
@@ -121,7 +118,6 @@
         border-bottom: 1.5px solid var(--color-tertiary);
     }
 
-    /* Media queries */
     @media (max-width: 40rem) {
         :global(blockquote) {
             padding: 0 0 0 var(--spacing-4);
@@ -147,7 +143,6 @@
         max-width: 100%;
     }
 
-    /* Dark Mode Button */
     .btn-toggle {
         float: right;
         text-decoration: none;

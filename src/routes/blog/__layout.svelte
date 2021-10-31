@@ -40,7 +40,6 @@
 </svelte:head>
 
 <PageHead title={post.title} description={post.description} />
-
 <ArticleTitle title={post.title} />
 <ArticleMeta date={post.date} />
 
@@ -50,7 +49,6 @@
 
 <style>
     :global(pre) {
-        overflow: auto;
         border-radius: 0.45em;
         padding: 0.84em;
     }
