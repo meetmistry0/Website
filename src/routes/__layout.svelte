@@ -12,9 +12,8 @@
 <DarkMode bind:theme />
 
 <nav>
-    <a class="links" href="/">/home</a>
-    <a sveltekit:prefetch class="links" href="/blog">/blog</a>
-    <a class="links" href="/about">/about</a>
+    <a class="links" href="/">Home</a>
+    <a sveltekit:prefetch class="links" href="/blog">Blog</a>
     <button class="btn-toggle" on:click={() => (theme = switchTheme)}
         >☀️/🌑</button
     >
@@ -77,20 +76,17 @@
         letter-spacing: -0.03em;
     }
 
-    :global(h1, h2, h3, h4, h5, h6) {
+    :global(h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a) {
+        color: var(--color-accent);
         text-decoration: none;
         box-shadow: none;
     }
 
-    :global(h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a) {
-        text-decoration: none;
-        color: var(--text-color);
-    }
-
-    /* :global(h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5
+    :global(h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5
             > a:hover, h6 > a:hover) {
-        text-decoration: none;
-    } */
+        color: var(--color-accent);
+        text-decoration: underline;
+    }
 
     :global(blockquote) {
         margin-left: calc(-1 * var(--spacing-6));

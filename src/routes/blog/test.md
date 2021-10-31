@@ -1,6 +1,6 @@
 ---
 title: "Does it work?"
-description: "hmmm..."
+description: "hmm what can be a good description?"
 date: "2021-09-04"
 published: true
 ---
@@ -13,9 +13,6 @@ published: true
 ###### Heading level 6
 
 ```js
-import { slugFromPath } from '$lib/util';
-
-/** @type {import('@sveltejs/kit').RequestHandler} */
 export async function get({ query }) {
     const modules = import.meta.glob('./*.{md,svx,svelte.md}');
 
@@ -48,7 +45,3 @@ export async function get({ query }) {
     };
 }
 ```
-
-does `inline code` work properly?
-
-`yes it does.`
