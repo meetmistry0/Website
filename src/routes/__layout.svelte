@@ -42,7 +42,7 @@
     :global(.dark) {
         --bg: #121212;
         --text-color: #ffffff;
-        --inlineCode-bg: rgba(115, 124, 153, 0.2);
+        --inlineCode-bg: #282c34;
         --inlineCode-text: #e6e6e6;
         transition: background-color 0.4s;
     }
