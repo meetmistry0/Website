@@ -49,6 +49,6 @@
     }
 
     :global(pre) {
-        border-radius: 0.5em;
+        border-radius: 0.45em;
     }
 </style>
