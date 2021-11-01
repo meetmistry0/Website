@@ -27,19 +27,10 @@
     import ArticleTitle from "$lib/components/ArticleTitle.svelte";
     import ArticleMeta from "$lib/components/ArticleMeta.svelte";
     import BackToTop from "$lib/components/BackToTop.svelte";
+    import SyntaxHighlighting from "$lib/components/SyntaxHighlighting.svelte";
 
     export let post;
 </script>
-
-<svelte:head>
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-tomorrow.min.css"
-        integrity="sha512-vswe+cgvic/XBoF1OcM/TeJ2FW0OofqAVdCZiEYkd6dwGXthvkSFWOoGGJgS2CW70VK5dQM5Oh+7ne47s74VTg=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-    />
-</svelte:head>
 
 <PageHead title={post.title} description={post.description} />
 <ArticleTitle title={post.title} />
