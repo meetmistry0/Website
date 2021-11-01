@@ -1,7 +1,6 @@
 <script>
-    import DarkMode from "svelte-dark-mode";
     import { afterUpdate } from "svelte";
-
+    import DarkMode from "svelte-dark-mode";
     let theme;
     $: switchTheme = theme === "dark" ? "light" : "dark";
     afterUpdate(() => {
@@ -14,9 +13,15 @@
 <nav>
     <a class="links" href="/">Home</a>
     <a sveltekit:prefetch class="links" href="/blog">Blog</a>
-    <button class="btn-toggle" on:click={() => (theme = switchTheme)}
-        >☀️/🌑</button
-    >
+    {#if theme === "dark"}
+        <button class="btn-toggle" on:click={() => (theme = switchTheme)}
+            >🌑 Mode</button
+        >
+    {:else}
+        <button class="btn-toggle" on:click={() => (theme = switchTheme)}
+            >☀️ Mode</button
+        >
+    {/if}
 </nav>
 
 <main>
