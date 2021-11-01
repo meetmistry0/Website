@@ -11,8 +11,8 @@
 <DarkMode bind:theme />
 
 <nav>
-    <a class="links" href="/">Home</a>
-    <a sveltekit:prefetch class="links" href="/blog">Blog</a>
+    <a class="links" href="/">/home</a>
+    <a sveltekit:prefetch class="links" href="/blog">/blog</a>
     {#if theme === "dark"}
         <button class="btn-toggle" on:click={() => (theme = switchTheme)}
             >🌑 Mode</button

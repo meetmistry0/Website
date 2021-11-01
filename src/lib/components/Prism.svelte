@@ -1,9 +1,10 @@
-<!-- ##### ONE DARK THEME FOR SYNTAX HIGHLIGHTING ###### -->
+<!-- <<<<< ONE DARK THEME FOR SYNTAX HIGHLIGHTING >>>>> -->
 <style>
     :global(code[class*="language-"], pre[class*="language-"]) {
         color: #abb2bf;
         background: none;
         font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+        font-size: 1em;
         text-align: left;
         white-space: pre;
         word-spacing: normal;
