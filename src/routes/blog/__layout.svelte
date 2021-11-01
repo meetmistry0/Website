@@ -27,7 +27,7 @@
     import ArticleTitle from "$lib/components/ArticleTitle.svelte";
     import ArticleMeta from "$lib/components/ArticleMeta.svelte";
     import BackToTop from "$lib/components/BackToTop.svelte";
-    import SyntaxHighlighting from "$lib/components/SyntaxHighlighting.svelte";
+    import Prism from "$lib/components/Prism.svelte";
 
     export let post;
 </script>
