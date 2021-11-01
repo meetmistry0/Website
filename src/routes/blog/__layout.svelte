@@ -32,13 +32,13 @@
 </script>
 
 <svelte:head>
-    <!-- <link
+    <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-tomorrow.min.css"
         integrity="sha512-vswe+cgvic/XBoF1OcM/TeJ2FW0OofqAVdCZiEYkd6dwGXthvkSFWOoGGJgS2CW70VK5dQM5Oh+7ne47s74VTg=="
         crossorigin="anonymous"
         referrerpolicy="no-referrer"
-    /> -->
+    />
 </svelte:head>
 
 <PageHead title={post.title} description={post.description} />
@@ -51,16 +51,13 @@
 
 <style>
     :global(code) {
-        border-radius: 0.4em;
-        padding: 0.2em 0.25em 0.1em;
+        border-radius: 0.35em;
+        padding: 0.15em 0.2em 0.05em;
         background: var(--inlineCode-bg);
         color: var(--inlineCode-text);
-        display: inline-block;
-        max-width: 100%;
     }
 
     :global(pre) {
-        white-space: pre-wrap;
-        word-wrap: break-word;
+        border-radius: 0.5em;
     }
 </style>

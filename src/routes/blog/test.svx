@@ -1,0 +1,19 @@
+---
+title: "Post-1"
+description: "description"
+date: "2021-10-04"
+published: true
+---
+
+The `inline code is` pretty cool.
+
+```js
+const posts = await Promise.all(postPromises);
+    const publishedPosts = posts.filter((post) => post.published).slice(0, limit);
+
+    publishedPosts.sort((a, b) => (new Date(a.date) > new Date(b.date) ? -1 : 1));
+
+    return {
+        body: publishedPosts.slice(0, limit)
+    };
+```
