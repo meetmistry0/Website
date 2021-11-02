@@ -16,9 +16,6 @@
 </script>
 
 <script>
-    import DarkMode from "svelte-dark-mode";
-    let theme;
-
     import Article from "$lib/components/Article.svelte";
     import ArticleTitle from "$lib/components/ArticleTitle.svelte";
     import ArticleMeta from "$lib/components/ArticleMeta.svelte";
@@ -32,20 +29,14 @@
     <meta name="description" content="Personal blog" />
 </svelte:head>
 
-<DarkMode bind:theme />
+<main>
+    <h1 class="page-title">Writings</h1>
 
-<h1 class="page-title">Writings</h1>
-
-{#each posts as { slug, title, description, date }}
-    <Article>
-        <ArticleTitle {slug} {title} />
-        <ArticleMeta {date} />
-        <ArticleDescription {description} {slug} />
-    </Article>
-{/each}
-
-<style>
-    .page-title {
-        text-align: center;
-    }
-</style>
+    {#each posts as { slug, title, description, date }}
+        <Article>
+            <ArticleTitle {slug} {title} />
+            <ArticleMeta {date} />
+            <ArticleDescription {description} {slug} />
+        </Article>
+    {/each}
+</main>

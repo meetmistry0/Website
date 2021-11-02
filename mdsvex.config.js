@@ -10,9 +10,9 @@ const config = {
 
   remarkPlugins: [],
   rehypePlugins: [
-    rehypeSlug, // Adds IDs to headings (h1-h6)
+    rehypeSlug,
     [
-      rehypeAutolinkHeadings, // Make headings clickable for navigation
+      rehypeAutolinkHeadings,
       {
         behavior: 'wrap'
       }

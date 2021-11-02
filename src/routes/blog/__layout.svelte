@@ -32,13 +32,15 @@
     export let post;
 </script>
 
-<PageHead title={post.title} description={post.description} />
-<ArticleTitle title={post.title} />
-<ArticleMeta date={post.date} />
+<main>
+    <PageHead title={post.title} description={post.description} />
+    <ArticleTitle title={post.title} />
+    <ArticleMeta date={post.date} />
 
-<slot />
+    <slot />
 
-<BackToTop />
+    <BackToTop />
+</main>
 
 <style>
     :global(code) {

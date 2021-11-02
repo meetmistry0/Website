@@ -1,6 +1,5 @@
 <script>
 	export let date;
-
 	const formattedDate = new Date(date).toDateString();
 </script>
 
