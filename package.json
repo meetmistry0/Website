@@ -15,7 +15,6 @@
   "type": "module",
   "dependencies": {
     "rehype-autolink-headings": "^6.1.0",
-    "rehype-slug": "^5.0.0",
-    "svelte-dark-mode": "^2.0.0"
+    "rehype-slug": "^5.0.0"
   }
 }

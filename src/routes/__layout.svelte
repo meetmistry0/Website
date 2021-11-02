@@ -1,27 +1,41 @@
 <script>
-    import { afterUpdate } from "svelte";
-    import DarkMode from "svelte-dark-mode";
-    let theme;
-    $: switchTheme = theme === "dark" ? "light" : "dark";
-    afterUpdate(() => {
-        document.body.className = theme;
+    import { onMount } from "svelte";
+
+    onMount(() => {
+        const toggleSwitch = document.querySelector(
+            '.theme-switch input[type="checkbox"]'
+        );
+        const currentTheme = localStorage.getItem("theme");
+
+        if (currentTheme) {
+            document.documentElement.setAttribute("data-theme", currentTheme);
+
+            if (currentTheme === "dark") {
+                toggleSwitch.checked = true;
+            }
+        }
+
+        function switchTheme(e) {
+            if (e.target.checked) {
+                document.documentElement.setAttribute("data-theme", "dark");
+                localStorage.setItem("theme", "dark");
+            } else {
+                document.documentElement.setAttribute("data-theme", "light");
+                localStorage.setItem("theme", "light");
+            }
+        }
+
+        toggleSwitch.addEventListener("change", switchTheme, false);
     });
 </script>
-
-<DarkMode bind:theme />
 
 <nav>
     <a class="links" href="/">/home</a>
     <a sveltekit:prefetch class="links" href="/blog">/blog</a>
-    {#if theme === "dark"}
-        <button class="btn-toggle" on:click={() => (theme = switchTheme)}
-            >🌑 Mode</button
-        >
-    {:else}
-        <button class="btn-toggle" on:click={() => (theme = switchTheme)}
-            >☀️ Mode</button
-        >
-    {/if}
+    <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round" />
+    </label>
 </nav>
 
 <main>
@@ -42,22 +56,21 @@
         --color-tertiary: #d1dce5;
         --font-heading: "Fira Mono", monospace;
         --font-body: "Poppins", sans-serif;
-    }
 
-    :global(.dark) {
-        --bg: #121212;
-        --text-color: #ffffff;
-        --inlineCode-bg: #282c34;
-        --inlineCode-text: #e6e6e6;
-        transition: background-color 0.4s;
-    }
+        /* ----------------- */
 
-    :global(.light) {
         --bg: #fffbf4;
         --text-color: #000000;
         --inlineCode-bg: rgba(255, 229, 100, 0.2);
         --inlineCode-text: #1a1a1a;
-        transition: background-color 0.4s;
+    }
+
+    :global([data-theme="dark"]) {
+        --bg: #121212;
+        --text-color: #ffffff;
+        --inlineCode-bg: #282c34;
+        --inlineCode-text: #e6e6e6;
+        /* transition: var(--bg) 0.4s; */
     }
 
     :global(body) {
@@ -144,24 +157,6 @@
         max-width: 100%;
     }
 
-    .btn-toggle {
-        float: right;
-        text-decoration: none;
-        cursor: pointer;
-        font-weight: bold;
-        color: #fff;
-        background-color: #fa243c;
-        padding: 3px 9px;
-        border-radius: 5px;
-        box-shadow: 0 5px 0 0 #dc001a;
-        border: none;
-        font-family: inherit;
-    }
-    .btn-toggle:active {
-        transform: translateY(5px);
-        box-shadow: none;
-    }
-
     :global(.links) {
         font-weight: bold;
         font-family: var(--font-heading);
@@ -173,5 +168,47 @@
 
     nav a {
         margin-right: 0.8em;
+    }
+
+    .theme-switch {
+        float: right;
+        height: 33px;
+        position: relative;
+        width: 60px;
+    }
+    .theme-switch input {
+        display: none;
+    }
+    .slider {
+        background-color: #ccc;
+        bottom: 0;
+        cursor: pointer;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: 0.4s;
+    }
+    .slider:before {
+        background-color: #fff;
+        bottom: 4px;
+        content: "";
+        height: 26px;
+        left: 4px;
+        position: absolute;
+        transition: 0.4s;
+        width: 26px;
+    }
+    input:checked + .slider {
+        background-color: #66bb6a;
+    }
+    input:checked + .slider:before {
+        transform: translateX(26px);
+    }
+    .slider.round {
+        border-radius: 34px;
+    }
+    .slider.round:before {
+        border-radius: 50%;
     }
 </style>
