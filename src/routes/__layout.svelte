@@ -172,9 +172,9 @@
 
     .theme-switch {
         float: right;
-        height: 33px;
+        height: 26px;
         position: relative;
-        width: 60px;
+        width: 50px;
     }
     .theme-switch input {
         display: none;
@@ -187,23 +187,23 @@
         position: absolute;
         right: 0;
         top: 0;
-        transition: 0.4s;
+        transition: 0.35s;
     }
     .slider:before {
         background-color: #fff;
-        bottom: 4px;
+        bottom: 3px;
         content: "";
-        height: 26px;
-        left: 4px;
+        height: 20px;
+        left: 3px;
         position: absolute;
-        transition: 0.4s;
-        width: 26px;
+        transition: 0.35s;
+        width: 20px;
     }
     input:checked + .slider {
-        background-color: #66bb6a;
+        background-color: olive;
     }
     input:checked + .slider:before {
-        transform: translateX(26px);
+        transform: translateX(24px);
     }
     .slider.round {
         border-radius: 34px;
