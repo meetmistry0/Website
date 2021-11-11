@@ -1,5 +1,5 @@
 <script>
-    export let showOnPx = 250;
+    export let showOnPx = 200;
     let hidden = true;
 
     function goTop() {
