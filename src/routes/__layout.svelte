@@ -1,53 +1,11 @@
 <script>
-    import { onMount } from "svelte";
-
-    onMount(() => {
-        const toggleSwitch = document.querySelector(
-            '.theme-switch input[type="checkbox"]'
-        );
-
-        const currentTheme = localStorage.getItem("theme");
-
-        if (currentTheme) {
-            document.documentElement.setAttribute("data-theme", currentTheme);
-
-            if (currentTheme === "dark") {
-                toggleSwitch.checked = true;
-            }
-        }
-
-        function switchTheme(e) {
-            if (e.target.checked) {
-                document.documentElement.setAttribute("data-theme", "dark");
-                localStorage.setItem("theme", "dark");
-            } else {
-                document.documentElement.setAttribute("data-theme", "light");
-                localStorage.setItem("theme", "light");
-            }
-        }
-
-        toggleSwitch.addEventListener("change", switchTheme, false);
-    });
+    import ThemeToggle from "$lib/components/ThemeToggle.svelte";
 </script>
-
-<svelte:head>
-    <script>
-        // This is to prevent a brief white flash when page is reloaded while it is using dark theme.
-        if (localStorage.theme)
-            document.documentElement.setAttribute(
-                "data-theme",
-                localStorage.theme
-            );
-    </script>
-</svelte:head>
 
 <nav>
     <a sveltekit:prefetch class="links" href="/">/home</a>
     <a sveltekit:prefetch class="links" href="/blog">/blog</a>
-    <label class="theme-switch" for="checkbox">
-        <input type="checkbox" id="checkbox" />
-        <div class="slider round" />
-    </label>
+    <ThemeToggle />
 </nav>
 
 <main>
@@ -191,51 +149,5 @@
     nav a:hover,
     a:focus {
         box-shadow: none;
-    }
-
-    .theme-switch {
-        float: right;
-        height: 26px;
-        position: relative;
-        width: 50px;
-    }
-    .theme-switch input {
-        display: none;
-    }
-    .slider {
-        background-color: #96dcee;
-        bottom: 0;
-        cursor: pointer;
-        left: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-        transition: 0.4s;
-    }
-    .slider:before {
-        background-color: #fffaa8;
-        border: 2px solid #f5eb71;
-        bottom: 2px;
-        content: "";
-        height: 18px;
-        left: 2px;
-        position: absolute;
-        transition: 0.4s;
-        width: 18px;
-    }
-
-    input:checked + .slider {
-        background-color: #6b7abb;
-    }
-    input:checked + .slider:before {
-        background-color: #fff;
-        border: 2px solid #d6d6d6;
-        transform: translateX(24px);
-    }
-    .slider.round {
-        border-radius: 34px;
-    }
-    .slider.round:before {
-        border-radius: 50%;
     }
 </style>
