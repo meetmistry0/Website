@@ -1,10 +1,5 @@
 <script context="module">
-    /**
-     * @type {import('@sveltejs/kit').Load}
-     */
     export async function load({ fetch }) {
-        // Use a `limit` querystring parameter to fetch a limited number of posts
-        // e.g. fetch('posts.json?limit=5') for 5 most recent posts
         const posts = await fetch("/blog.json").then((res) => res.json());
 
         return {
@@ -29,7 +24,7 @@
 </svelte:head>
 
 <main>
-    <h1 class="page-title">Writings</h1>
+    <h1 class="page-title">Posts</h1>
 
     {#each posts as { slug, title, description, date }}
         <Article>
