@@ -1,10 +1,10 @@
 <script>
-    import ThemeToggle from "$lib/components/ThemeToggle.svelte";
+    import ThemeToggle from "../components/ThemeToggle.svelte";
 </script>
 
 <nav>
-    <a sveltekit:prefetch class="links" href="/">/home</a>
-    <a sveltekit:prefetch class="links" href="/blog">/blog</a>
+    <a class="links" href="/">/index</a>
+    <a class="links" href="/about">/about</a>
     <ThemeToggle />
 </nav>
 
