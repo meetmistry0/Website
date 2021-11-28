@@ -13,7 +13,7 @@
 </main>
 
 <style>
-    @import url("https://fonts.googleapis.com/css2?family=Fira+Mono&family=Poppins&display=swap");
+    /* @import url("https://fonts.googleapis.com/css2?family=Fira+Mono&family=Poppins&display=swap"); */
 
     :root {
         --spacing-1: 0.25rem;
@@ -43,7 +43,7 @@
         margin: 0 auto;
         padding: 55px 28px 55px 28px;
         max-width: 40em; /* approx 64ch */
-        font-family: var(--font-body);
+        /* font-family: var(--font-body); */
         background-color: var(--bg);
         color: var(--text-color);
         font-size: 18px;
@@ -57,7 +57,7 @@
     }
 
     :global(h1, h2, h3, h4, h5, h6) {
-        font-family: var(--font-heading);
+        /* font-family: var(--font-heading); */
         letter-spacing: -0.03em;
     }
 
@@ -130,7 +130,7 @@
 
     :global(.links) {
         font-weight: bold;
-        font-family: var(--font-heading);
+        /* font-family: var(--font-heading); */
     }
 
     :global(.page-title) {
