@@ -20,6 +20,7 @@
         src: local(""),
             url("/fonts/poppins-v15-latin-regular.woff2") format("woff2"),
             url("/fonts/poppins-v15-latin-regular.woff") format("woff");
+        font-display: swap;
     }
 
     @font-face {
@@ -29,6 +30,7 @@
         src: local(""),
             url("/fonts/fira-mono-v9-latin-regular.woff2") format("woff2"),
             url("/fonts/fira-mono-v9-latin-regular.woff") format("woff");
+        font-display: swap;
     }
 
     :root {
