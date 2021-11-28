@@ -13,7 +13,7 @@
 </main>
 
 <style>
-    /* poppins-regular - latin */
+    /* Poppins */
     @font-face {
         font-family: "Poppins";
         font-style: normal;
@@ -24,14 +24,15 @@
                 url("/fonts/poppins-v15-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     }
 
-    /* fira-code-regular - latin */
+    /* Fira-Mono */
     @font-face {
-        font-family: "Fira Code";
+        font-family: "Fira Mono";
         font-style: normal;
         font-weight: 400;
         src: local(""),
-            url("/fonts/fira-code-v14-latin-regular.woff2") format("woff2"),
-            url("/fonts/fira-code-v14-latin-regular.woff") format("woff");
+            url("/fonts/fira-mono-v9-latin-regular.woff2") format("woff2"),
+            /* Chrome 26+, Opera 23+, Firefox 39+ */
+                url("/fonts/fira-mono-v9-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     }
 
     :root {
