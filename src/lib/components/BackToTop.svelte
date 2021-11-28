@@ -32,7 +32,7 @@
         text-align: center;
         color: var(--text-color);
         font-size: 0.9em;
-        /* font-family: "Poppins", sans-serif; */
+        font-family: "Poppins", sans-serif;
         background-color: var(--bg);
         cursor: pointer;
         position: fixed;

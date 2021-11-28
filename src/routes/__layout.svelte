@@ -2,6 +2,15 @@
     import ThemeToggle from "$lib/components/ThemeToggle.svelte";
 </script>
 
+<svelte:head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Poppins&display=swap"
+        rel="stylesheet"
+    />
+</svelte:head>
+
 <nav>
     <a class="links" href="/">/home</a>
     <a sveltekit:prefetch class="links" href="/blog">/blog</a>
@@ -43,7 +52,7 @@
         margin: 0 auto;
         padding: 55px 28px 55px 28px;
         max-width: 40em; /* approx 64ch */
-        /* font-family: var(--font-body); */
+        font-family: var(--font-body);
         background-color: var(--bg);
         color: var(--text-color);
         font-size: 18px;
@@ -57,7 +66,7 @@
     }
 
     :global(h1, h2, h3, h4, h5, h6) {
-        /* font-family: var(--font-heading); */
+        font-family: var(--font-heading);
         letter-spacing: -0.03em;
     }
 
@@ -130,7 +139,7 @@
 
     :global(.links) {
         font-weight: bold;
-        /* font-family: var(--font-heading); */
+        font-family: var(--font-heading);
     }
 
     :global(.page-title) {
