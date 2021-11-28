@@ -2,15 +2,6 @@
     import ThemeToggle from "$lib/components/ThemeToggle.svelte";
 </script>
 
-<svelte:head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Poppins&display=swap"
-        rel="stylesheet"
-    />
-</svelte:head>
-
 <nav>
     <a class="links" href="/">/home</a>
     <a sveltekit:prefetch class="links" href="/blog">/blog</a>
@@ -22,7 +13,26 @@
 </main>
 
 <style>
-    /* @import url("https://fonts.googleapis.com/css2?family=Fira+Mono&family=Poppins&display=swap"); */
+    /* poppins-regular - latin */
+    @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        src: local(""),
+            url("/fonts/poppins-v15-latin-regular.woff2") format("woff2"),
+            /* Chrome 26+, Opera 23+, Firefox 39+ */
+                url("/fonts/poppins-v15-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+
+    /* fira-code-regular - latin */
+    @font-face {
+        font-family: "Fira Code";
+        font-style: normal;
+        font-weight: 400;
+        src: local(""),
+            url("/fonts/fira-code-v14-latin-regular.woff2") format("woff2"),
+            url("/fonts/fira-code-v14-latin-regular.woff") format("woff");
+    }
 
     :root {
         --spacing-1: 0.25rem;
