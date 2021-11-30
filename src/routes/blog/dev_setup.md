@@ -7,6 +7,8 @@ published: true
 
 Setting up a customized development environment can be useful to those who use the tools shown here on a daily basis. 
 
+![Terminal Prompt](/blog-images/1-dev_setup/1.png)
+
 # 1) Terminal Setup
 
 ## 1. Windows Terminal
@@ -29,7 +31,7 @@ wsl --install
 
 If you're running an older build, or just prefer not to use the install command and would like step-by-step directions, see [**WSL manual installation steps for older versions.**](https://docs.microsoft.com/en-us/windows/wsl/install-manual)
 
-Reboot the machine to apply changes and you should see a prompt asking for username and password on an Ubuntu window .
+Reboot to apply changes.
 
 ## 3. Custom Prompt
 
@@ -43,7 +45,9 @@ After installing Chocolatey, use the below command to install Starship
 choco install starship
 ```
 
-Add the following to the end of Microsoft.PowerShell_profile.ps1. You can check the location of this file by querying the $PROFILE variable in PowerShell. Typically the path is ~\Documents\PowerShell\Microsoft.PowerShell_profile.ps1 or ~/.config/powershell/Microsoft.PowerShell_profile.ps1 on -Nix.
+Add the below to the end of `Microsoft.PowerShell_profile.ps1`. You can check the location of this file by querying the `$PROFILE` variable in PowerShell. 
+
+Typically the path is `~\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`
 
 ```ps1
 Invoke-Expression (&starship init powershell)

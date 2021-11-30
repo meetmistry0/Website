@@ -147,6 +147,7 @@
 
     :global(img) {
         max-width: 100%;
+        border-radius: 0.3em;
     }
 
     :global(.links) {
