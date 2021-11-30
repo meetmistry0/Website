@@ -104,6 +104,7 @@
         padding: 0 0 0 var(--spacing-6);
         border-left: var(--spacing-1) solid var(--color-accent);
         font-style: italic;
+        color: var(--color-secondary);
     }
 
     :global(blockquote > :last-child) {
