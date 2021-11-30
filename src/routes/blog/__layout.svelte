@@ -27,7 +27,7 @@
     import ArticleTitle from "$lib/components/ArticleTitle.svelte";
     import ArticleMeta from "$lib/components/ArticleMeta.svelte";
     import BackToTop from "$lib/components/BackToTop.svelte";
-    import "$lib/styles/OneDark.css";
+    import "$lib/styles/Gruvbox.css";
 
     export let post;
 </script>
