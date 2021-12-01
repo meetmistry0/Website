@@ -19,7 +19,7 @@
 </script>
 
 <svelte:head>
-    <title>blog | meet mistry</title>
+    <title>Blog | Meet Mistry</title>
     <meta name="description" content="Personal blog" />
 </svelte:head>
 
