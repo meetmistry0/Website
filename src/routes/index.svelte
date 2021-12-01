@@ -1,10 +1,10 @@
 <svelte:head>
-    <title>home | meet mistry</title>
+    <title>Meet Mistry</title>
     <meta name="description" content="My personal website" />
 </svelte:head>
 
 <main>
-    <h1 class="page-title">meet mistry</h1>
+    <h1 class="page-title">Meet Mistry</h1>
 
     <img src="/profile.jpg" alt="profile-pic" />
 
