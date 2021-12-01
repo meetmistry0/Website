@@ -1,15 +1,15 @@
 ---
-title: "Dev Setup"
-description: "Description"
+title: "Terminal Setup"
+description: "Description..."
 date: "2021-11-30"
 published: true
 ---
 
-Setting up a customized development environment can be useful to those who use the tools shown here on a daily basis. 
+Setting up a customized terminal can be useful to those who use it on a daily basis. 
 
 ![Terminal Prompt](/blog-images/1-dev_setup/1.png)
 
-# 1) Terminal Setup
+# Installation
 
 ## 1. Windows Terminal
 
@@ -95,13 +95,3 @@ Paste the below lines in `starship.toml`
 ```toml
 insert
 ```
-
-# 2) Editor Setup
-
-### Installing
-
-Install Visual Studio Code by downloading the installer from the [**Downloads page**](https://code.visualstudio.com/download) OR install it from the Microsoft Store.
-
-### Customizing the editor
-
-# Some Extras
