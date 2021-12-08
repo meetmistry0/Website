@@ -10,10 +10,6 @@ Setting up a customized terminal can be useful to those who use it on a daily ba
 ![Terminal Prompt](/blog-images/1-dev_setup/1.png)
 
 # Windows config
-
-
-
-
 ## 1. Windows Terminal
 
 Install the terminal from the [**Windows/Microsoft Store.**](https://www.microsoft.com/store/productId/9N0DX20HK701) 
@@ -21,6 +17,8 @@ Install the terminal from the [**Windows/Microsoft Store.**](https://www.microso
 If you don't like to use the store, Go to the [**releases page**](https://github.com/microsoft/terminal/releases/latest) on the github repo and install it.
 
 ## 2. Powershell Tweaks 
+
+
 ## 3. Starship Installation
 To install Starship we need [**Chocolatey**](https://chocolatey.org/) which is package manager for windows. Follow the [**Installation Instructions**](https://chocolatey.org/install) on the chocolatey website.
 
