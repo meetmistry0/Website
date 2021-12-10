@@ -1,5 +1,8 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b9045816-85b1-4744-beb5-ebc1363b5a92/deploy-status)](https://app.netlify.com/sites/meetmistry/deploys)
 
+## Lighthouse score
+[![lighthouse.png](https://i.postimg.cc/Qtg1zHdQ/lighthouse.png)](https://ibb.co/4dw2WFv)
+
 ## Development
 ```bash
 npm run dev
