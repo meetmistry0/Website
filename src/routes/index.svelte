@@ -71,14 +71,15 @@
     .social-links a,
     a:visited,
     a:active {
+        font-weight: bold;
         margin: 30px;
         color: var(--text-color);
         text-decoration: none;
         box-shadow: 0 2px 0 0 var(--color-accent);
+        font-family: var(--font-heading);
     }
 
-    .social-links a:hover,
-    a:focus {
+    .social-links a:hover {
         box-shadow: none;
     }
 </style>

@@ -5,6 +5,7 @@
 <nav>
     <a class="links" href="/">/index</a>
     <a sveltekit:prefetch class="links" href="/blog">/blog</a>
+    <a class="links" href="/about">/about</a>
     <ThemeToggle />
 </nav>
 
@@ -150,11 +151,6 @@
         border-radius: 0.3em;
     }
 
-    :global(.links) {
-        font-weight: bold;
-        font-family: var(--font-heading);
-    }
-
     :global(.page-title) {
         text-align: center;
     }
@@ -162,14 +158,15 @@
     nav a,
     a:visited,
     a:active {
+        font-weight: bold;
+        font-family: var(--font-heading);
         margin-right: 0.8em;
         color: var(--text-color);
         text-decoration: none;
         box-shadow: 0 2px 0 0 var(--color-accent);
     }
 
-    nav a:hover,
-    a:focus {
+    nav a:hover {
         box-shadow: none;
     }
 </style>
