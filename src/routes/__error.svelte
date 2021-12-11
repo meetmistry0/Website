@@ -1,18 +1,28 @@
+<script context="module">
+    /** @type {import('@sveltejs/kit').ErrorLoad} */
+    export function load({ error, status }) {
+        return {
+            props: {
+                errorCode: `${status}`,
+                errorMessage: `${error.message}`,
+            },
+        };
+    }
+</script>
+
+<script>
+    export let errorCode, errorMessage;
+</script>
+
 <main>
-    <h2>
-        <span class="errorCode">404</span>
-        <span class="errorMessage">Page Not Found</span>
-    </h2>
+    <h1 class="errorCode">{errorCode}</h1>
+    <h1 class="errorMessage">{errorMessage}</h1>
 </main>
 
 <style>
-    h2 {
+    h1 {
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: center;
-        font-weight: 400;
-        min-height: 400px;
     }
 
     .errorCode {

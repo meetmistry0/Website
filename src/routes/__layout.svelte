@@ -68,7 +68,7 @@
         background-color: var(--bg);
         color: var(--text-color);
         font-size: 18px;
-        transition: 0.4s;
+        transition: ease 0.5s;
     }
 
     :global(hr) {
