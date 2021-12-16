@@ -25,12 +25,11 @@
     }
 
     @font-face {
-        font-family: "Fira Mono";
+        font-family: "MonoLisa";
         font-style: normal;
         font-weight: 400;
-        src: local(""),
-            url("/fonts/fira-mono-v9-latin-regular.woff2") format("woff2"),
-            url("/fonts/fira-mono-v9-latin-regular.woff") format("woff");
+        src: local(""), url("/fonts/MonoLisa-Regular.woff2") format("woff2"),
+            url("/fonts/MonoLisa-Regular.woff") format("woff");
         font-display: swap;
     }
 
@@ -43,7 +42,7 @@
         --color-accent: #ff183a;
         --color-secondary: #838383;
         --color-tertiary: #d1dce5;
-        --font-heading: "Fira Mono", monospace;
+        --font-heading: "MonoLisa", monospace;
         --font-body: "Poppins", sans-serif;
         --bg: #fffbf4;
         --text-color: #000000;
