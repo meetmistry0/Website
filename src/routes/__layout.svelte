@@ -3,9 +3,9 @@
 </script>
 
 <nav>
-    <a class="links" href="/">/index</a>
-    <a sveltekit:prefetch class="links" href="/blog">/blog</a>
-    <a class="links" href="/about">/about</a>
+    <a href="/">/index</a>
+    <a sveltekit:prefetch href="/blog">/blog</a>
+    <a href="/about">/about</a>
     <ThemeToggle />
 </nav>
 

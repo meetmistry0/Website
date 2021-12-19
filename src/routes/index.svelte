@@ -66,6 +66,8 @@
         margin: 35px 0 35px 0;
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
     }
 
     .social-links a,
