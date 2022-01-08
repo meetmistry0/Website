@@ -1,15 +1,15 @@
 <script>
 	export let description;
-	// export let slug = "";
-	// const href = slug && `/blog/${slug}`;
+	export let slug = "";
+	const href = slug && `/blog/${slug}`;
 </script>
 
 <p>
 	{description}
 
-	<!-- {#if slug}
+	{#if slug}
 		<a {href}>Read More &rarr;</a>
-	{/if} -->
+	{/if}
 </p>
 
 <style>
