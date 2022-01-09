@@ -40,7 +40,7 @@
 body {
     margin: 0 auto;
     padding: 55px 28px 55px 28px;
-    max-width: 40em;
+    max-width: 42em;
     font-family: var(--font-body);
     background-color: var(--bg);
     color: var(--text-color);
