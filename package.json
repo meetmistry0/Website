@@ -4,13 +4,14 @@
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
+    "package": "svelte-kit package",
     "preview": "svelte-kit preview"
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "^1.0.0-next.21",
     "@sveltejs/kit": "next",
     "mdsvex": "^0.9.8",
-    "svelte": "^3.42.6"
+    "svelte": "^3.44.0"
   },
   "type": "module",
   "dependencies": {
