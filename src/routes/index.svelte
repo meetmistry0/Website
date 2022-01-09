@@ -63,7 +63,7 @@
     }
 
     .social-links {
-        margin: 35px 0 35px 0;
+        margin: 20px 0 20px 0;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
