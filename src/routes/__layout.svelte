@@ -46,17 +46,11 @@
         --font-body: "Poppins", sans-serif;
         --bg: #fffbf4;
         --text-color: #000000;
-        /* --inlineCode-bg: rgba(255, 229, 100, 0.2);
-        --inlineCode-text: #1a1a1a; */
-        --inlineCode-bg: #1d2021;
-        --inlineCode-text: #ebdbb2;
     }
 
     :global([data-theme="dark"]) {
         --bg: #121212;
         --text-color: #ffffff;
-        --inlineCode-bg: #1d2021;
-        --inlineCode-text: #ebdbb2;
     }
 
     :global(body) {
