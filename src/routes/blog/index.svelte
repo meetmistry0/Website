@@ -24,6 +24,8 @@
 </svelte:head>
 
 <main>
+    <h1 class="page-title">Posts</h1>
+
     {#each posts as post}
         <a rel="prefetch" href="blog/{post.slug}">
             <h2>

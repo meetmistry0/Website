@@ -1,3 +1,6 @@
+import rehypeSlug from 'rehype-slug';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
+
 const config = {
   layout: {
     blog: './src/lib/components/BlogLayout.svelte'
@@ -9,18 +12,16 @@ const config = {
     dashes: "oldschool",
   },
 
-  remarkPlugins: [
-    require('remark-abbr')
-  ],
+  remarkPlugins: [],
   rehypePlugins: [
-    require('rehype-slug'),
+    rehypeSlug,
     [
-      require('rehype-autolink-headings'),
+      rehypeAutolinkHeadings,
       {
         behavior: 'wrap'
       }
     ]
-  ]
+  ],
 };
 
 export default config;

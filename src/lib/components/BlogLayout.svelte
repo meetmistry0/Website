@@ -4,7 +4,7 @@
     export let created;
 </script>
 
-<div class="post">
+<main>
     <PostHeader {title} {created} />
     <slot />
-</div>
+</main>
