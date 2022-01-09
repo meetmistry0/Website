@@ -26,10 +26,10 @@
     }
 
     .errorCode {
-        font-size: 7rem;
+        font-size: 6rem;
     }
 
     .errorMessage {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 </style>
