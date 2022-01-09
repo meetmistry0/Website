@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""),
+        url("./fonts/poppins-v15-latin-regular.woff2") format("woff2"),
+        url("./fonts/poppins-v15-latin-regular.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "MonoLisa";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""), url("./fonts/MonoLisa-Regular.woff2") format("woff2"),
+        url("./fonts/MonoLisa-Regular.woff") format("woff");
+    font-display: swap;
+}
+
+:root {
+    --spacing-1: 0.25rem;
+    --spacing-4: 1rem;
+    --spacing-6: 1.5rem;
+    --spacing-8: 2rem;
+    --spacing-unit: 4px;
+    --color-accent: #ff183a;
+    --color-secondary: #838383;
+    --color-tertiary: #d1dce5;
+    --font-heading: "MonoLisa", monospace;
+    --font-body: "Poppins", sans-serif;
+    --bg: #fffbf4;
+    --text-color: #000000;
+}
+
+[data-theme="dark"] {
+    --bg: #121212;
+    --text-color: #ffffff;
+}
+
+body {
+    margin: 0 auto;
+    padding: 55px 28px 55px 28px;
+    max-width: 40em;
+    font-family: var(--font-body);
+    background-color: var(--bg);
+    color: var(--text-color);
+    font-size: 18px;
+    transition: ease 0.5s;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.03em;
+}
+    
+a, a:visited, a:active {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 0.3em;
+}
+
+.page-title {
+    text-align: center;
+} 
