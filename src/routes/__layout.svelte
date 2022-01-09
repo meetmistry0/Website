@@ -17,6 +17,7 @@
     nav a,
     a:visited,
     a:active {
+        flex-wrap: wrap;
         font-weight: bold;
         font-family: var(--font-heading);
         margin-right: 0.8em;
