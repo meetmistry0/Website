@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
     import { onMount } from "svelte";
 
     onMount(() => {
@@ -27,6 +27,35 @@
         }
 
         toggleSwitch.addEventListener("change", switchTheme, false);
+    });
+</script> -->
+<script>
+    import { onMount } from "svelte";
+
+    onMount(() => {
+        (function () {
+            var toggler = document.querySelector(
+                    '.theme-switch input[type="checkbox"]'
+                ),
+                root = document.documentElement,
+                currentTheme = localStorage.getItem("theme") || "dark";
+
+            if (currentTheme == "light") toggler.removeAttribute("checked");
+            else toggler.checked = "true";
+
+            root.setAttribute("data-theme", currentTheme);
+            toggler.addEventListener("change", toggleTheme, false);
+
+            function toggleTheme(e) {
+                if (this.checked) {
+                    root.setAttribute("data-theme", "dark");
+                    localStorage.setItem("theme", "dark");
+                } else {
+                    root.setAttribute("data-theme", "light");
+                    localStorage.setItem("theme", "light");
+                }
+            }
+        })();
     });
 </script>
 
@@ -59,9 +88,11 @@
         position: relative;
         width: 50px;
     }
+
     .theme-switch input {
         display: none;
     }
+
     .slider {
         background-color: #96dcee;
         bottom: 0;
@@ -72,6 +103,7 @@
         top: 0;
         transition: ease 0.4s;
     }
+
     .slider:before {
         background-color: #fffaa8;
         border: 2px solid #f5eb71;
@@ -87,14 +119,17 @@
     input:checked + .slider {
         background-color: #6b7abb;
     }
+
     input:checked + .slider:before {
         background-color: #fff;
         border: 2px solid #d6d6d6;
         transform: translateX(24px);
     }
+
     .slider.round {
         border-radius: 34px;
     }
+
     .slider.round:before {
         border-radius: 50%;
     }

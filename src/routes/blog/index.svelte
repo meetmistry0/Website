@@ -27,11 +27,24 @@
     <h1 class="page-title">Posts</h1>
 
     {#each posts as post}
-        <a rel="prefetch" href="blog/{post.slug}">
-            <h2>
-                {post.title}
-            </h2>
-        </a>
-        {post.created}
+        <ul>
+            <a class="post-title" rel="prefetch" href="blog/{post.slug}">
+                <h1>
+                    {post.title}
+                </h1>
+            </a>
+            <p class="date">{post.created}</p>
+        </ul>
     {/each}
 </main>
+
+<style>
+    .post-title {
+        color: var(--color-accent);
+        text-decoration: none;
+    }
+
+    .date {
+        color: var(--color-secondary);
+    }
+</style>
