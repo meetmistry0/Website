@@ -1,6 +1,7 @@
 ---
 title: Template
 created: '2021-05-18'
+read_time: '5 min'
 slug: 'post'
 ---
 

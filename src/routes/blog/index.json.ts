@@ -1,4 +1,4 @@
-//import { parse } from 'path';
+import { parse } from 'path';
 
 import type { RequestHandler } from '@sveltejs/kit';
 
@@ -6,6 +6,7 @@ interface Post {
     created: string;
     title: string;
     slug: string;
+    read_time: string;
 }
 
 function dateSort(a: Post, b: Post) {
