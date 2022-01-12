@@ -7,6 +7,7 @@ interface Post {
     title: string;
     slug: string;
     read_time: string;
+    description: string;
 }
 
 function dateSort(a: Post, b: Post) {

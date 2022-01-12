@@ -27,14 +27,13 @@
     <h1 class="page-title">Posts</h1>
 
     {#each posts as post}
-        <ul>
-            <a class="post-title" rel="prefetch" href="blog/{post.slug}">
-                <h1>
-                    {post.title}
-                </h1>
-            </a>
-            <p class="date">{post.created}</p>
-        </ul>
+        <a class="post-title" rel="prefetch" href="blog/{post.slug}">
+            <h1>
+                {post.title}
+            </h1>
+        </a>
+        <p class="meta">{post.created} &bull; ☕ {post.read_time} read</p>
+        <p>{post.description}</p>
     {/each}
 </main>
 
@@ -42,9 +41,12 @@
     .post-title {
         color: var(--color-accent);
         text-decoration: none;
+        margin-bottom: 0;
     }
 
-    .date {
+    .meta {
+        margin: 0;
         color: var(--color-secondary);
+        font-weight: bold;
     }
 </style>
