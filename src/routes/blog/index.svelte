@@ -36,7 +36,7 @@
                 {post.title}
             </h1>
         </a>
-        <p class="meta">{post.created} &bull; ☕ {post.read_time} read</p>
+        <p class="meta">{post.date} &bull; ☕ {post.read_time} min read</p>
         <p>{post.description}</p>
     {/each}
 </main>

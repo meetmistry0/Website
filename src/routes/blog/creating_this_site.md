@@ -1,8 +1,8 @@
 ---
 title: Creating this website
 description: My roughly outlined experience of creating this website in SvelteKit.
-created: '2021-12-16'
-read_time: ' min'
+date: '2021-12-16'
+read_time: '5'
 slug: 'creating_this_site'
 ---
 

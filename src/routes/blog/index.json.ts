@@ -1,17 +1,15 @@
-import { parse } from 'path';
-
 import type { RequestHandler } from '@sveltejs/kit';
 
 interface Post {
-    created: string;
+    date: Date;
     title: string;
     slug: string;
-    read_time: string;
+    read_time: number;
     description: string;
 }
 
 function dateSort(a: Post, b: Post) {
-    return new Date(b.created).getTime() - new Date(a.created).getTime();
+    return new Date(b.date).getTime() - new Date(a.date).getTime();
 }
 
 export const get: RequestHandler = async () => {

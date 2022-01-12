@@ -1,7 +1,7 @@
 <script>
     export let title;
     export let description;
-    export let created;
+    export let date;
     export let read_time;
 </script>
 
@@ -11,7 +11,7 @@
 </svelte:head>
 
 <h1>{title}</h1>
-<p class="meta">{created} &bull; ☕ {read_time} read</p>
+<p class="meta">{date} &bull; ☕ {read_time} min read</p>
 
 <style>
     h1 {
