@@ -11,7 +11,6 @@
 </svelte:head>
 
 <h1>{title}</h1>
-<p class="meta">{description}</p>
 <p class="meta">{created} &bull; ☕ {read_time} read</p>
 
 <style>

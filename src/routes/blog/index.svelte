@@ -27,8 +27,12 @@
     <h1 class="page-title">Posts</h1>
 
     {#each posts as post}
-        <a class="post-title" rel="prefetch" href="blog/{post.slug}">
-            <h1>
+        <a
+            style="text-decoration: none;"
+            rel="prefetch"
+            href="blog/{post.slug}"
+        >
+            <h1 class="post-title">
                 {post.title}
             </h1>
         </a>
@@ -40,8 +44,7 @@
 <style>
     .post-title {
         color: var(--color-accent);
-        text-decoration: none;
-        margin-bottom: 0;
+        margin-bottom: 5px;
     }
 
     .meta {
