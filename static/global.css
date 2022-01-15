@@ -31,7 +31,7 @@
 
 [data-theme="dark"] {
     --bg-color: #121212;
-    --text-color: #ffffff;
+    --text-color: #fffbf4;
     --inlineCode-bg: #1d2021;
     --inlineCode-text: #fffaec;
 }
