@@ -78,7 +78,7 @@
         color: var(--text-color);
         text-decoration: none;
         box-shadow: 0 2px 0 0 var(--color-accent);
-        font-family: var(--font-heading);
+        font-family: var(--font-mono);
     }
 
     .social-links a:hover {

@@ -18,26 +18,19 @@
 }
 
 :root {
-    --spacing-1: 0.25rem;
-    --spacing-4: 1rem;
-    --spacing-6: 1.5rem;
-    --spacing-8: 2rem;
-    --spacing-unit: 4px;
     --color-accent: #ff183a;
     --color-secondary: #838383;
     --color-tertiary: #d1dce5;
-    --font-heading: "MonoLisa", monospace;
-    --font-body: "Poppins", sans-serif;
-    --bg: #fffbf4;
+    --font-main: "Poppins", sans-serif;
+    --font-mono: "MonoLisa", monospace;
+    --bg-color: #fffbf4;
     --text-color: #000000;
     --inlineCode-bg: rgba(255, 229, 100, 0.2);
     --inlineCode-text: #1a1a1a;
-    /* --inlineCode-bg: #1d2021;
-    --inlineCode-text: #ebdbb2; */
 }
 
 [data-theme="dark"] {
-    --bg: #121212;
+    --bg-color: #121212;
     --text-color: #ffffff;
     --inlineCode-bg: #1d2021;
     --inlineCode-text: #fffaec;
@@ -47,15 +40,15 @@ body {
     margin: 0 auto;
     padding: 55px 28px 55px 28px;
     max-width: 42em;
-    font-family: var(--font-body);
-    background-color: var(--bg);
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
     color: var(--text-color);
     font-size: 18px;
     transition: ease 0.5s;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-heading);
+    font-family: var(--font-mono);
     letter-spacing: -0.03em;
 }
     
@@ -87,7 +80,7 @@ hr {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-heading);
+    font-family: var(--font-mono);
     letter-spacing: -0.03em;
 }
 
@@ -109,10 +102,10 @@ h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5
 }
 
 blockquote {
-    margin-left: calc(-1 * var(--spacing-6));
+    margin-left: calc(-1 * 1.5rem);
     margin-right: 2rem;
-    padding: 0 0 0 var(--spacing-6);
-    border-left: var(--spacing-1) solid var(--color-accent);
+    padding: 0 0 0 1.5rem;
+    border-left: 0.25rem solid var(--color-accent);
     font-style: italic;
     color: var(--color-secondary);
 }
@@ -137,7 +130,7 @@ table thead tr th {
 
 @media (max-width: 40rem) {
     blockquote {
-        padding: 0 0 0 var(--spacing-4);
+        padding: 0 0 0 1rem;
         margin-left: 0;
     }
 

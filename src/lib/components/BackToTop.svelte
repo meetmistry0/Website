@@ -33,7 +33,7 @@
         color: var(--text-color);
         font-size: 0.9em;
         font-family: "Poppins", sans-serif;
-        background-color: var(--bg);
+        background-color: var(--bg-color);
         cursor: pointer;
         position: fixed;
         bottom: 30px;
