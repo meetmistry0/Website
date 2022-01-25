@@ -1,4 +1,5 @@
 <script>
+    import BackToTop from "./BackToTop.svelte";
     export let title;
     export let description;
     export let date;
@@ -12,6 +13,7 @@
 
 <h1>{title}</h1>
 <p class="meta">{date} &bull; ☕ {read_time} min read</p>
+<BackToTop />
 
 <style>
     h1 {
