@@ -41,10 +41,12 @@
         border: 2px solid var(--color-accent);
         border-radius: 6px;
         padding: 4px 12px;
+        transition: ease 0.4s;
     }
 
     .back-to-top.hidden {
         opacity: 0;
         visibility: hidden;
+        transition: ease 0.4s;
     }
 </style>
