@@ -1,5 +1,5 @@
 <script>
-    export let showOnPx = 200;
+    export let showOnPx = 250;
     let hidden = true;
 
     function goTop() {
@@ -41,12 +41,12 @@
         border: 2px solid var(--color-accent);
         border-radius: 6px;
         padding: 4px 12px;
-        transition: ease 0.4s;
+        transition: ease-in 0.4s;
     }
 
     .back-to-top.hidden {
         opacity: 0;
         visibility: hidden;
-        transition: ease 0.4s;
+        transition: ease-out 0.4s;
     }
 </style>
