@@ -6,7 +6,7 @@
                 '.theme-switch input[type="checkbox"]'
             ) as any,
             root = document.documentElement,
-            currentTheme = localStorage.getItem("theme") || "dark";
+            currentTheme: string = localStorage.getItem("theme") || "dark";
 
         root.setAttribute("data-theme", currentTheme);
 
@@ -29,17 +29,6 @@
         toggler.addEventListener("change", toggleTheme, false);
     });
 </script>
-
-<svelte:head>
-    <script>
-        // This is to prevent a brief white flash when page is reloaded while it is using dark theme.
-        if (localStorage.theme)
-            document.documentElement.setAttribute(
-                "data-theme",
-                localStorage.theme
-            );
-    </script>
-</svelte:head>
 
 <main>
     <label class="theme-switch" for="checkbox">
