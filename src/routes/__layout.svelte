@@ -6,7 +6,7 @@
 
 <nav>
     <a href="/">/home</a>
-    <a sveltekit:prefetch href="/blog">/blog</a>
+    <a href="/blog">/blog</a>
     <a href="/about">/about</a>
     <ThemeToggle />
 </nav>

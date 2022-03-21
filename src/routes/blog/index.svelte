@@ -27,11 +27,7 @@
     <h1 class="page-title">Posts</h1>
 
     {#each posts as post}
-        <a
-            sveltekit:prefetch
-            style="text-decoration: none;"
-            href="blog/{post.slug}"
-        >
+        <a style="text-decoration: none;" href="blog/{post.slug}">
             <h1 class="post-title">
                 {post.title}
             </h1>
