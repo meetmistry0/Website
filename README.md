@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b9045816-85b1-4744-beb5-ebc1363b5a92/deploy-status)](https://app.netlify.com/sites/meetmistry/deploys)
+![Vercel deployment status](https://img.shields.io/github/deployments/meetmistry0/website/production?label=Vercel&logo=vercel&logoColor=white)
 
 ## Lighthouse score
 [![lighthouse.png](https://i.postimg.cc/Qtg1zHdQ/lighthouse.png)](https://ibb.co/4dw2WFv)
