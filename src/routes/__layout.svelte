@@ -1,5 +1,7 @@
 <script>
+    import { page } from "$app/stores";
     import ThemeToggle from "$lib/components/ThemeToggle.svelte";
+    import Transition from "$lib/components/PageTransition.svelte";
 </script>
 
 <nav>
@@ -10,7 +12,9 @@
 </nav>
 
 <main>
-    <slot />
+    <Transition url={$page.url}>
+        <slot />
+    </Transition>
 </main>
 
 <style>
