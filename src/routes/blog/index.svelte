@@ -2,7 +2,7 @@
     /**
      * @type {import('@sveltejs/kit').Load}
      */
-    export async function load({ url, fetch }) {
+    export async function load({ fetch }) {
         const response = await fetch("/blog.json");
 
         const { posts } = await response.json();
@@ -28,8 +28,8 @@
 
     {#each posts as post}
         <a
+            sveltekit:prefetch
             style="text-decoration: none;"
-            rel="prefetch"
             href="blog/{post.slug}"
         >
             <h1 class="post-title">
