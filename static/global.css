@@ -159,7 +159,7 @@ code[class*='language-'],
 pre[class*='language-'] {
   color: white;
   background: #1d2021;
-  font-family: Consolas, Menlo, Monaco, source-code-pro, Courier New, monospace;
+  font-family: "MonoLisa", monospace;
   font-feature-settings: normal;
   text-align: left;
   white-space: pre;
@@ -182,7 +182,7 @@ pre[class*='language-'] {
 /* Code blocks */
 pre[class*='language-'] {
   overflow: auto;
-  padding: 1.3125rem;
+  padding: 1rem;
 }
 
 pre[class*='language-']::-moz-selection {
