@@ -1,157 +1,186 @@
 @font-face {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    src: local(""),
-        url("./fonts/poppins-v15-latin-regular.woff2") format("woff2"),
-        url("./fonts/poppins-v15-latin-regular.woff") format("woff");
-    font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("./fonts/poppins-v15-latin-regular.woff2") format("woff2"),
+    url("./fonts/poppins-v15-latin-regular.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "MonoLisa";
-    font-style: normal;
-    font-weight: 400;
-    src: local(""), url("./fonts/MonoLisa-Regular.woff2") format("woff2"),
-        url("./fonts/MonoLisa-Regular.woff") format("woff");
-    font-display: swap;
+  font-family: "MonoLisa";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("./fonts/MonoLisa-Regular.woff2") format("woff2"),
+    url("./fonts/MonoLisa-Regular.woff") format("woff");
+  font-display: swap;
 }
 
 :root {
-    --color-accent: #ff183a;
-    --color-secondary: #838383;
-    --color-tertiary: #d1dce5;
-    --font-main: "Poppins", sans-serif;
-    --font-mono: "MonoLisa", monospace;
-    --bg-color: #fffbf4;
-    --text-color: #000000;
-    --inlineCode-bg: rgba(255, 229, 100, 0.2);
-    --inlineCode-text: #1a1a1a;
+  --color-accent: #ff183a;
+  --color-secondary: #838383;
+  --color-tertiary: #d1dce5;
+  --font-main: "Poppins", sans-serif;
+  --font-mono: "MonoLisa", monospace;
+  --bg-color: #fffbf4;
+  --text-color: #000000;
+  --inlineCode-bg: rgba(255, 229, 100, 0.2);
+  --inlineCode-text: #1a1a1a;
 }
 
 [data-theme="dark"] {
-    --bg-color: #121212;
-    --text-color: #fffbf4;
-    --inlineCode-bg: #1d2021;
-    --inlineCode-text: #fffaec;
+  --bg-color: #121212;
+  --text-color: #fffbf4;
+  --inlineCode-bg: #1d2021;
+  --inlineCode-text: #fffaec;
 }
 
 body {
-    margin: 0 auto;
-    padding: 55px 28px 55px 28px;
-    max-width: 42em;
-    font-family: var(--font-main);
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-size: 18px;
-    transition: ease 0.5s;
+  margin: 0 auto;
+  padding: 55px 28px 55px 28px;
+  max-width: 42em;
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: 18px;
+  transition: ease 0.5s;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-mono);
-    letter-spacing: -0.03em;
-}
-    
-a, a:visited, a:active {
-    color: var(--text-color);
-    text-decoration: underline;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-mono);
+  letter-spacing: -0.03em;
 }
 
-a:hover, a:focus {
-    text-decoration: none;
+a,
+a:visited,
+a:active {
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
 }
 
 img {
-    max-width: 100%;
-    border-radius: 0.3em;
+  max-width: 100%;
+  border-radius: 0.3em;
 }
 
 .page-title {
-    text-align: center;
-} 
+  text-align: center;
+}
 
 
 /* BLOG STYLING */
 
 hr {
-    background: var(--color-tertiary);
-    height: 1.5px;
-    border: 0;
+  background: var(--color-tertiary);
+  height: 1.5px;
+  border: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-mono);
-    letter-spacing: -0.03em;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-mono);
+  letter-spacing: -0.03em;
 }
 
-h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
-    color: var(--color-accent);
-    text-decoration: none;
+h1>a,
+h2>a,
+h3>a,
+h4>a,
+h5>a,
+h6>a {
+  color: var(--color-accent);
+  text-decoration: none;
 }
 
-h1 > a:visited, h2 > a:visited, h3 > a:visited, h4 > a:visited, h5
-        > a:visited, h6 > a:visited {
-    color: var(--color-accent);
-    text-decoration: none;
+h1>a:visited,
+h2>a:visited,
+h3>a:visited,
+h4>a:visited,
+h5>a:visited,
+h6>a:visited {
+  color: var(--color-accent);
+  text-decoration: none;
 }
 
-h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5
-        > a:hover, h6 > a:hover {
-    color: var(--color-accent);
-    text-decoration: underline;
+h1>a:hover,
+h2>a:hover,
+h3>a:hover,
+h4>a:hover,
+h5>a:hover,
+h6>a:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
 }
 
 blockquote {
-    margin-left: calc(-1 * 1.5rem);
-    margin-right: 2rem;
-    padding: 0 0 0 1.5rem;
-    border-left: 0.25rem solid var(--color-accent);
-    font-style: italic;
-    color: var(--color-secondary);
+  margin-left: calc(-1 * 1.5rem);
+  margin-right: 2rem;
+  padding: 0 0 0 1rem;
+  border-left: 0.25rem solid var(--color-accent);
+  font-style: italic;
+  color: var(--color-secondary);
 }
 
-blockquote > :last-child {
-    margin-bottom: 0;
+blockquote> :last-child {
+  margin-bottom: 0;
 }
 
-blockquote > ul, blockquote > ol {
-    list-style-position: inside;
+blockquote>ul,
+blockquote>ol {
+  list-style-position: inside;
 }
 
 table {
-    margin-bottom: 2rem;
-    border-collapse: collapse;
-    border-spacing: 0.25rem;
+  margin-bottom: 2rem;
+  border-collapse: collapse;
+  border-spacing: 0.25rem;
 }
 
 table thead tr th {
-    border-bottom: 1.5px solid var(--color-tertiary);
+  border-bottom: 1.5px solid var(--color-tertiary);
 }
 
 @media (max-width: 40rem) {
-    blockquote {
-        padding: 0 0 0 1rem;
-        margin-left: 0;
-    }
+  blockquote {
+    padding: 0 0 0 1rem;
+    margin-left: 0;
+  }
 
-    ul, ol {
-        list-style-position: inside;
-    }
+  ul,
+  ol {
+    list-style-position: inside;
+  }
 }
 
 /* IN-LINE CODE */
 
 code {
-    border-radius: 0.35em;
-    padding: 0.15em 0.2em 0.05em;
-    background: var(--inlineCode-bg);
-    color: var(--inlineCode-text);
+  font-family: "MonoLisa", monospace;
+  border-radius: 0.35em;
+  padding: 0.15em 0.2em 0.05em;
+  background: var(--inlineCode-bg);
+  color: var(--inlineCode-text);
+  word-wrap: break-word;
 }
 
 pre {
-    border-radius: 0.45em;
+  border-radius: 0.5em;
 }
-
 
 /* SYNTAX HIGHLIGHTING */
 
@@ -160,61 +189,27 @@ pre[class*='language-'] {
   color: white;
   background: #1d2021;
   font-family: "MonoLisa", monospace;
+  font-size: 1rem;
   font-feature-settings: normal;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
   word-break: normal;
   word-wrap: normal;
-  line-height: 1.5;
   margin-bottom: 0;
-
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
   tab-size: 4;
-
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
   hyphens: none;
 }
 
 /* Code blocks */
 pre[class*='language-'] {
   overflow: auto;
-  padding: 1rem;
+  padding: 0.8rem;
 }
 
-pre[class*='language-']::-moz-selection {
-  /* Firefox */
-  background: hsl(207, 4%, 16%);
-}
-
-pre[class*='language-']::selection {
-  /* Safari */
-  background: hsl(207, 4%, 16%);
-}
-
-/* Text Selection colour */
-pre[class*='language-']::-moz-selection,
-pre[class*='language-'] ::-moz-selection {
-  text-shadow: none;
-  background: hsla(0, 0%, 100%, 0.15);
-}
-
-pre[class*='language-']::selection,
 pre[class*='language-'] ::selection {
   text-shadow: none;
   background: hsla(0, 0%, 100%, 0.15);
-}
-
-/* Inline code */
-:not(pre) > code[class*='language-'] {
-  border-radius: 0.3em;
-  background: var(--inlineCode-bg);
-  color: var(--inlineCode-text);
-  padding: 0.15em 0.2em 0.05em;
-  white-space: normal;
 }
 
 .token.attr-name {
