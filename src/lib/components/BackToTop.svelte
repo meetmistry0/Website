@@ -30,8 +30,8 @@
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
         role="img"
-        width="24"
-        height="24"
+        width="26"
+        height="26"
         preserveAspectRatio="xMidYMid meet"
         viewBox="0 0 16 14"
         ><path
