@@ -91,7 +91,7 @@ However, few of us actually know how to put that need into words.
 
 Here’s a list of commonly unmet universal needs at work:
 
-![list of commonly unmet universal needs](../../../blog-images/needs.png)
+![list of commonly unmet universal needs](/blog-images/needs.png)
 
 # Conclusion
 These points can help you expand your ability to reinterpret bad behaviours with generosity. Ask yourself, ***‘What else might be going on here?’*** Then listen carefully and stay curious.
