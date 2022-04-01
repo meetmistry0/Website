@@ -103,7 +103,6 @@ h3>a,
 h4>a,
 h5>a,
 h6>a {
-  color: var(--color-accent);
   text-decoration: none;
 }
 
@@ -113,7 +112,6 @@ h3>a:visited,
 h4>a:visited,
 h5>a:visited,
 h6>a:visited {
-  color: var(--color-accent);
   text-decoration: none;
 }
 
@@ -123,8 +121,8 @@ h3>a:hover,
 h4>a:hover,
 h5>a:hover,
 h6>a:hover {
-  color: var(--color-accent);
-  text-decoration: underline;
+  border-bottom: 4px dotted var(--color-secondary);
+
 }
 
 blockquote {
@@ -202,6 +200,7 @@ pre[class*='language-'] {
 }
 
 /* Code blocks */
+
 pre[class*='language-'] {
   overflow: auto;
   padding: 0.8rem;
