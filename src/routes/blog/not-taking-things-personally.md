@@ -3,7 +3,7 @@ title: Not taking things personally
 description: Understanding why people say what they say in tense situations.
 date: '2021-09-01'
 read_time: '5'
-slug: 'not_taking_things_personally'
+slug: 'not-taking-things-personally'
 ---
 
 > ***‘That’s irrational.’***
@@ -91,7 +91,7 @@ However, few of us actually know how to put that need into words.
 
 Here’s a list of commonly unmet universal needs at work:
 
-![list of commonly unmet universal needs](/blog-images/needs.png)
+![list of commonly unmet universal needs](/blog-images/not-taking-things-personally/needs.png)
 
 # Conclusion
 These points can help you expand your ability to reinterpret bad behaviours with generosity. Ask yourself, ***‘What else might be going on here?’*** Then listen carefully and stay curious.
