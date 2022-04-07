@@ -1,7 +1,7 @@
 <script>
     import { page } from "$app/stores";
-    import ThemeToggle from "$lib/components/ThemeToggle.svelte";
-    import Transition from "$lib/components/PageTransition.svelte";
+    import ThemeToggle from "$lib/ThemeToggle.svelte";
+    import Transition from "$lib/PageTransition.svelte";
 </script>
 
 <nav>
