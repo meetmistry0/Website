@@ -16,7 +16,7 @@
       toggler.checked = "true";
     }
 
-    function toggleTheme(e: CustomEvent) {
+    function toggleTheme(e: InputEvent) {
       if (this.checked) {
         root.setAttribute("data-theme", "dark");
         localStorage.setItem("theme", "dark");
