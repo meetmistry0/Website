@@ -73,14 +73,14 @@
   }
 
   .social-links a,
-  a:visited,
-  a:active {
+  .social-links a:visited,
+  .social-links a:active {
     font-weight: bold;
     margin: 30px;
     color: var(--text-color);
     text-decoration: none;
     box-shadow: 0 2px 0 0 var(--color-accent);
-    font-family: var(--font-mono);
+    font-family: var(--font-main);
   }
 
   .social-links a:hover {
