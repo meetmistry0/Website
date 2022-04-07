@@ -19,8 +19,8 @@
 
 <style>
     nav a,
-    a:visited,
-    a:active {
+    nav a:visited,
+    nav a:active {
         flex-wrap: wrap;
         font-weight: bold;
         font-family: var(--font-mono);
