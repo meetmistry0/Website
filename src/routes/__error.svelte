@@ -26,7 +26,7 @@
   }
 
   .errorCode {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 
   .errorMessage {

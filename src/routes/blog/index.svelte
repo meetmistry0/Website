@@ -4,8 +4,8 @@
    */
   export async function load({ fetch }) {
     const response = await fetch("/blog.json");
-
     const { posts } = await response.json();
+
     return {
       props: {
         posts,
