@@ -1,35 +1,35 @@
 <script context="module">
-    /** @type {import('@sveltejs/kit').ErrorLoad} */
-    export function load({ error, status }) {
-        return {
-            props: {
-                errorCode: `${status}`,
-                errorMessage: `${error.message}`,
-            },
-        };
-    }
+  /** @type {import('@sveltejs/kit').ErrorLoad} */
+  export function load({ error, status }) {
+    return {
+      props: {
+        errorCode: `${status}`,
+        errorMessage: `${error.message}`,
+      },
+    };
+  }
 </script>
 
 <script>
-    export let errorCode, errorMessage;
+  export let errorCode, errorMessage;
 </script>
 
 <main>
-    <h1 class="errorCode">{errorCode}</h1>
-    <h1 class="errorMessage">{errorMessage}</h1>
+  <h1 class="errorCode">{errorCode}</h1>
+  <h1 class="errorMessage">{errorMessage}</h1>
 </main>
 
 <style>
-    h1 {
-        display: flex;
-        justify-content: center;
-    }
+  h1 {
+    display: flex;
+    justify-content: center;
+  }
 
-    .errorCode {
-        font-size: 6rem;
-    }
+  .errorCode {
+    font-size: 6rem;
+  }
 
-    .errorMessage {
-        font-size: 1.5rem;
-    }
+  .errorMessage {
+    font-size: 1.5rem;
+  }
 </style>

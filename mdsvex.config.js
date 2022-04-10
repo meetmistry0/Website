@@ -3,7 +3,7 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 
 const config = {
   layout: {
-    blog: './src/lib/components/BlogLayout.svelte'
+    blog: './src/lib/BlogLayout.svelte'
   },
 
   extensions: [".svelte.md", ".md", ".svx"],

@@ -1,87 +1,89 @@
 <svelte:head>
-    <title>Meet Mistry</title>
-    <meta name="description" content="My personal website" />
+  <title>Meet Mistry</title>
+  <meta name="description" content="My personal website" />
 </svelte:head>
 
 <main>
-    <h1 class="page-title">Meet Mistry</h1>
+  <h1 class="page-title">Meet Mistry</h1>
 
-    <img src="/profile.jpg" alt="profile-pic" />
+  <img src="/profile.jpg" alt="profile-pic" />
 
-    <div class="social-links">
-        <a
-            href="https://github.com/meetmistry0/"
-            class="links"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-github"
-                viewBox="0 0 16 16"
-            >
-                <path
-                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-                />
-            </svg>
-            Github</a
-        >
+  <div class="social-links">
+    <a
+      href="https://github.com/meetmistry0/"
+      class="links"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        viewBox="0 0 16 16"
+        fill="none"
+        ><path
+          d="M7.49933 0.25C3.49635 0.25 0.25 3.49593 0.25 7.50024C0.25 10.703 2.32715 13.4206 5.2081 14.3797C5.57084 14.446 5.70302 14.2222 5.70302 14.0299C5.70302 13.8576 5.69679 13.4019 5.69323 12.797C3.67661 13.235 3.25112 11.825 3.25112 11.825C2.92132 10.9874 2.44599 10.7644 2.44599 10.7644C1.78773 10.3149 2.49584 10.3238 2.49584 10.3238C3.22353 10.375 3.60629 11.0711 3.60629 11.0711C4.25298 12.1788 5.30335 11.8588 5.71638 11.6732C5.78225 11.205 5.96962 10.8854 6.17658 10.7043C4.56675 10.5209 2.87415 9.89918 2.87415 7.12104C2.87415 6.32925 3.15677 5.68257 3.62053 5.17563C3.54576 4.99226 3.29697 4.25521 3.69174 3.25691C3.69174 3.25691 4.30015 3.06196 5.68522 3.99973C6.26337 3.83906 6.8838 3.75895 7.50022 3.75583C8.1162 3.75895 8.73619 3.83906 9.31523 3.99973C10.6994 3.06196 11.3069 3.25691 11.3069 3.25691C11.7026 4.25521 11.4538 4.99226 11.3795 5.17563C11.8441 5.68257 12.1245 6.32925 12.1245 7.12104C12.1245 9.9063 10.4292 10.5192 8.81452 10.6985C9.07444 10.9224 9.30633 11.3648 9.30633 12.0413C9.30633 13.0102 9.29742 13.7922 9.29742 14.0299C9.29742 14.2239 9.42828 14.4496 9.79591 14.3788C12.6746 13.4179 14.75 10.7025 14.75 7.50024C14.75 3.49593 11.5036 0.25 7.49933 0.25Z"
+          fill="currentColor"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+        />
+      </svg>
+      Github</a
+    >
 
-        <a
-            href="https://www.linkedin.com/in/meet-mistry-129254201/"
-            class="links"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-linkedin"
-                viewBox="0 0 16 16"
-            >
-                <path
-                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
-                />
-            </svg>
-            LinkedIn</a
-        >
-    </div>
+    <a
+      href="https://www.linkedin.com/in/meet-mistry-129254201/"
+      class="links"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        viewBox="0 0 16 16"
+        fill="none"
+        ><path
+          d="M2 1C1.44772 1 1 1.44772 1 2V13C1 13.5523 1.44772 14 2 14H13C13.5523 14 14 13.5523 14 13V2C14 1.44772 13.5523 1 13 1H2ZM3.05 6H4.95V12H3.05V6ZM5.075 4.005C5.075 4.59871 4.59371 5.08 4 5.08C3.4063 5.08 2.925 4.59871 2.925 4.005C2.925 3.41129 3.4063 2.93 4 2.93C4.59371 2.93 5.075 3.41129 5.075 4.005ZM12 8.35713C12 6.55208 10.8334 5.85033 9.67449 5.85033C9.29502 5.83163 8.91721 5.91119 8.57874 6.08107C8.32172 6.21007 8.05265 6.50523 7.84516 7.01853H7.79179V6.00044H6V12.0047H7.90616V8.8112C7.8786 8.48413 7.98327 8.06142 8.19741 7.80987C8.41156 7.55832 8.71789 7.49825 8.95015 7.46774H9.02258C9.62874 7.46774 10.0786 7.84301 10.0786 8.78868V12.0047H11.9847L12 8.35713Z"
+          fill="currentColor"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+        /></svg
+      >
+      LinkedIn</a
+    >
+  </div>
 </main>
 
 <style>
-    img {
-        display: block;
-        margin: 0 auto;
-        width: 165px;
-        height: 165px;
-        border-radius: 50%;
-    }
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+  }
 
-    .social-links {
-        margin: 20px 0 20px 0;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        box-sizing: border-box;
-    }
+  .social-links {
+    margin: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
 
-    .social-links a,
-    a:visited,
-    a:active {
-        font-weight: bold;
-        margin: 30px;
-        color: var(--text-color);
-        text-decoration: none;
-        box-shadow: 0 2px 0 0 var(--color-accent);
-        font-family: var(--font-mono);
-    }
+  .social-links a,
+  .social-links a:visited,
+  .social-links a:active {
+    font-weight: bold;
+    margin: 30px;
+    color: var(--text-color);
+    text-decoration: none;
+    box-shadow: 0 2px 0 0 var(--color-accent);
+    font-family: var(--font-main);
+  }
 
-    .social-links a:hover {
-        box-shadow: none;
-    }
+  .social-links a:hover {
+    box-shadow: none;
+  }
 </style>

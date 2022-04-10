@@ -1,20 +1,25 @@
 @font-face {
-  font-family: "Poppins";
+  font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 400;
-  src: local(""),
-    url("./fonts/poppins-v15-latin-regular.woff2") format("woff2"),
-    url("./fonts/poppins-v15-latin-regular.woff") format("woff");
+  font-weight: 900;
   font-display: swap;
+  src: local(''), url('./fonts/montserrat-v23-latin-900.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: "MonoLisa";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
-  src: local(""), url("./fonts/MonoLisa-Regular.woff2") format("woff2"),
-    url("./fonts/MonoLisa-Regular.woff") format("woff");
   font-display: swap;
+  src: local(''), url('./fonts/poppins-v19-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: "Cartograph";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(''), url("./fonts/CartographCF-Regular.woff2") format("woff2");
 }
 
 :root {
@@ -22,7 +27,8 @@
   --color-secondary: #838383;
   --color-tertiary: #d1dce5;
   --font-main: "Poppins", sans-serif;
-  --font-mono: "MonoLisa", monospace;
+  --font-heading: "Montserrat", sans-serif;
+  --font-mono: "Cartograph", monospace;
   --bg-color: #fffbf4;
   --text-color: #000000;
   --inlineCode-bg: rgba(255, 229, 100, 0.2);
@@ -47,16 +53,6 @@ body {
   transition: ease 0.5s;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-mono);
-  letter-spacing: -0.03em;
-}
-
 a,
 a:visited,
 a:active {
@@ -78,7 +74,6 @@ img {
   text-align: center;
 }
 
-
 /* BLOG STYLING */
 
 hr {
@@ -93,7 +88,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-mono);
+  font-family: var(--font-heading);
   letter-spacing: -0.03em;
 }
 
@@ -103,8 +98,11 @@ h3>a,
 h4>a,
 h5>a,
 h6>a {
-  color: var(--color-accent);
   text-decoration: none;
+  /* border-bottom: 0.12em dotted var(--color-secondary); */
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--color-secondary);
 }
 
 h1>a:visited,
@@ -113,7 +111,6 @@ h3>a:visited,
 h4>a:visited,
 h5>a:visited,
 h6>a:visited {
-  color: var(--color-accent);
   text-decoration: none;
 }
 
@@ -123,8 +120,10 @@ h3>a:hover,
 h4>a:hover,
 h5>a:hover,
 h6>a:hover {
-  color: var(--color-accent);
-  text-decoration: underline;
+  /* border-bottom: 0.12em dotted var(--color-accent); */
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--color-accent);
 }
 
 blockquote {
@@ -170,9 +169,10 @@ table thead tr th {
 /* IN-LINE CODE */
 
 code {
-  font-family: "MonoLisa", monospace;
-  border-radius: 0.35em;
-  padding: 0.15em 0.2em 0.05em;
+  font-family: var(--font-mono);
+  line-height: 1.5;
+  border-radius: 0.3em;
+  padding: 0em 0.2em 0.1em;
   background: var(--inlineCode-bg);
   color: var(--inlineCode-text);
   word-wrap: break-word;
@@ -188,7 +188,8 @@ code[class*='language-'],
 pre[class*='language-'] {
   color: white;
   background: #1d2021;
-  font-family: "MonoLisa", monospace;
+  font-family: var(--font-mono);
+  line-height: 1.5;
   font-size: 1rem;
   font-feature-settings: normal;
   text-align: left;
@@ -202,6 +203,7 @@ pre[class*='language-'] {
 }
 
 /* Code blocks */
+
 pre[class*='language-'] {
   overflow: auto;
   padding: 0.8rem;
