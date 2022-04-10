@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 900;
+  font-weight: 800;
   font-display: swap;
-  src: local(''), url('./fonts/montserrat-v23-latin-900.woff2') format('woff2');
+  src: local(''), url('./fonts/montserrat-v23-latin-800.woff2') format('woff2');
 }
 
 @font-face {
@@ -14,21 +14,13 @@
   src: local(''), url('./fonts/poppins-v19-latin-regular.woff2') format('woff2');
 }
 
-@font-face {
-  font-family: "Cartograph";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local(''), url("./fonts/CartographCF-Regular.woff2") format("woff2");
-}
-
 :root {
   --color-accent: #ff183a;
   --color-secondary: #838383;
   --color-tertiary: #d1dce5;
   --font-main: "Poppins", sans-serif;
   --font-heading: "Montserrat", sans-serif;
-  --font-mono: "Cartograph", monospace;
+  --font-mono: Consolas, Menlo, Monaco, Courier New, monospace;
   --bg-color: #fffbf4;
   --text-color: #000000;
   --inlineCode-bg: rgba(255, 229, 100, 0.2);
