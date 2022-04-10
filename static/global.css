@@ -99,6 +99,10 @@ h4>a,
 h5>a,
 h6>a {
   text-decoration: none;
+  /* border-bottom: 0.12em dotted var(--color-secondary); */
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--color-secondary);
 }
 
 h1>a:visited,
@@ -116,8 +120,10 @@ h3>a:hover,
 h4>a:hover,
 h5>a:hover,
 h6>a:hover {
-  border-bottom: 4px dotted var(--color-secondary);
-
+  /* border-bottom: 0.12em dotted var(--color-accent); */
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--color-accent);
 }
 
 blockquote {
