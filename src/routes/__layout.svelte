@@ -23,7 +23,7 @@
   nav a:active {
     flex-wrap: wrap;
     font-weight: bold;
-    font-family: var(--font-main);
+    font-family: var(--font-mono);
     margin-right: 0.8em;
     color: var(--text-color);
     text-decoration: none;

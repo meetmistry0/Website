@@ -1,20 +1,25 @@
 @font-face {
-  font-family: "Poppins";
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local(''), url('./fonts/montserrat-v23-latin-900.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
-  src: local(""),
-    url("./fonts/poppins-v15-latin-regular.woff2") format("woff2"),
-    url("./fonts/poppins-v15-latin-regular.woff") format("woff");
   font-display: swap;
+  src: local(''), url('./fonts/poppins-v19-latin-regular.woff2') format('woff2');
 }
 
 @font-face {
   font-family: "Cartograph";
   font-style: normal;
   font-weight: 400;
-  src: local(""), url("./fonts/CartographCF-Regular.woff2") format("woff2"),
-    url("./fonts/CartographCF-Regular.woff") format("woff");
   font-display: swap;
+  src: local(''), url("./fonts/CartographCF-Regular.woff2") format("woff2");
 }
 
 :root {
@@ -22,6 +27,7 @@
   --color-secondary: #838383;
   --color-tertiary: #d1dce5;
   --font-main: "Poppins", sans-serif;
+  --font-heading: "Montserrat", sans-serif;
   --font-mono: "Cartograph", monospace;
   --bg-color: #fffbf4;
   --text-color: #000000;
@@ -82,7 +88,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-main);
+  font-family: var(--font-heading);
   letter-spacing: -0.03em;
 }
 
