@@ -1,5 +1,3 @@
-![Vercel deployment status](https://img.shields.io/github/deployments/meetmistry0/website/production?label=Vercel&logo=vercel&logoColor=white)
-
 ## Lighthouse score
 [![lighthouse.png](https://i.postimg.cc/Qtg1zHdQ/lighthouse.png)](https://ibb.co/4dw2WFv)
 
