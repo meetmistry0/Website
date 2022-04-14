@@ -20,7 +20,7 @@
   --color-tertiary: #d1dce5;
   --font-main: "Poppins", sans-serif;
   --font-heading: "Montserrat", sans-serif;
-  --font-mono: Consolas, Menlo, Monaco, Courier New, monospace;
+  --font-mono: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
   --bg-color: #fffbf4;
   --text-color: #000000;
   --inlineCode-bg: rgba(255, 229, 100, 0.2);
