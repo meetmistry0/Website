@@ -1,6 +1,6 @@
-<script>
-  export let showOnPx = 250;
-  let hidden = true;
+<script lang="ts">
+  export let showOnPx: number = 250;
+  let hidden: Boolean = true;
 
   function goTop() {
     document.body.scrollIntoView({ behavior: "smooth" });

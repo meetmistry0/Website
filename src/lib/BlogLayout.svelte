@@ -1,4 +1,6 @@
 <script>
+  // @ts-nocheck
+
   import PostHeader from "$lib/PostHeader.svelte";
   export let title;
   export let description;

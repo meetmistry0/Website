@@ -16,7 +16,7 @@
       toggler.checked = "true";
     }
 
-    function toggleTheme() {
+    function toggleTheme(this: HTMLInputElement) {
       if (this.checked) {
         root.setAttribute("data-theme", "dark");
         localStorage.setItem("theme", "dark");

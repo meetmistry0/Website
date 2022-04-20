@@ -1,5 +1,3 @@
-import type { RequestHandler } from '@sveltejs/kit';
-
 interface Post {
   date: Date;
   title: string;
@@ -12,9 +10,9 @@ function dateSort(a: Post, b: Post): number {
   return new Date(b.date).getTime() - new Date(a.date).getTime();
 }
 
-export const get: RequestHandler = async () => {
+export const get = async () => {
   const modules = import.meta.glob('./**/*.md');
-  const posts = [];
+  const posts: Post[] = [];
 
   await Promise.all(
     Object.entries(modules).map(async ([_, module]) => {

@@ -15,6 +15,8 @@
 </script>
 
 <script>
+  // @ts-nocheck
+
   export let posts;
 </script>
 
