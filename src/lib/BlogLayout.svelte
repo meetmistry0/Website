@@ -1,7 +1,7 @@
-<script>
+<script lang="ts">
   // @ts-nocheck
 
-  import PostHeader from "$lib/PostHeader.svelte";
+  import PostHeader from "./PostHeader.svelte";
   export let title;
   export let description;
   export let date;

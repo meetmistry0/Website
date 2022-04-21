@@ -1,9 +1,10 @@
-<script context="module">
+<script context="module" lang="ts">
   /**
    * @type {import('@sveltejs/kit').Load}
    */
+
   export async function load({ fetch }) {
-    const response = await fetch("/blog.json");
+    const response: Response = await fetch("/blog.json");
     const { posts } = await response.json();
 
     return {
