@@ -1,9 +1,9 @@
-<script>
+<script lang="ts">
   import BackToTop from "./BackToTop.svelte";
-  export let title;
-  export let description;
-  export let date;
-  export let read_time;
+  export let title: string;
+  export let description: string;
+  export let date: any;
+  export let read_time: number;
 </script>
 
 <svelte:head>

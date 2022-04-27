@@ -1,6 +1,17 @@
-<script context="module">
+<script context="module" lang="ts">
   /** @type {import('@sveltejs/kit').ErrorLoad} */
-  export function load({ error, status }) {
+
+  interface ErrorMessage {
+    message?: string;
+  }
+
+  export function load({
+    error,
+    status,
+  }: {
+    error: ErrorMessage;
+    status: string;
+  }) {
     return {
       props: {
         errorCode: `${status}`,
@@ -10,8 +21,8 @@
   }
 </script>
 
-<script>
-  export let errorCode, errorMessage;
+<script lang="ts">
+  export let errorCode: number, errorMessage: string;
 </script>
 
 <main>
