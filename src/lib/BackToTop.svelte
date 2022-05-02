@@ -44,7 +44,7 @@
 
 <style>
   #back-to-top {
-    color: var(--text-color);
+    color: var(--color-text);
     position: fixed;
     right: 1.4em;
     bottom: 1.4em;
@@ -54,7 +54,7 @@
     font-size: 20px;
     cursor: pointer;
     border: 2px solid var(--color-accent);
-    background-color: var(--bg-color);
+    background-color: var(--color-bg);
     transition: ease-in 0.4s;
   }
 

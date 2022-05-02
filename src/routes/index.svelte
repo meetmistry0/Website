@@ -77,7 +77,7 @@
   .social-links a:active {
     font-weight: bold;
     margin: 30px;
-    color: var(--text-color);
+    color: var(--color-text);
     text-decoration: none;
     box-shadow: 0 2px 0 0 var(--color-accent);
     font-family: var(--font-main);

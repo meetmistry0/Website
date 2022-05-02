@@ -25,7 +25,7 @@
     font-weight: bold;
     font-family: var(--font-heading);
     margin-right: 0.8em;
-    color: var(--text-color);
+    color: var(--color-text);
     text-decoration: none;
     box-shadow: 0 2px 0 0 var(--color-accent);
   }
