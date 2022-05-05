@@ -11,5 +11,5 @@
     to the open-source software community.
   </p>
 
-  <p>My hobbies are reading, cycling, listening to music and gaming</p>
+  <p>My hobbies are reading, cycling, listening to music and gaming.</p>
 </main>
