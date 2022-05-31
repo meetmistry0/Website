@@ -32,7 +32,6 @@
     role="img"
     width="26"
     height="26"
-    preserveAspectRatio="xMidYMid meet"
     viewBox="0 -0.5 16 14"
     ><path
       fill="currentColor"
